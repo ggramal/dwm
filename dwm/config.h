@@ -253,6 +253,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period,     tagmon,                 {.i = +1 } },
 	
   /* custom  */
+    
+    { MODKEY,                       XK_l,                       spawn,          SHCMD("i3lock -i ~/Pictures/wallpapers/kangchenjunga_v2.png") },
     { MODKEY|ShiftMask,             XK_x,                       spawn,          SHCMD("firefox") },
     { MODKEY|ShiftMask,             XK_o,                       spawn,          SHCMD("opera") },
     { MODKEY|ShiftMask,             XK_t,                       spawn,          SHCMD("telegram-desktop") },
