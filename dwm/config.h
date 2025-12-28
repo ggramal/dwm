@@ -141,7 +141,7 @@ static const Rule rules[] = {
 	RULE(.wintype = WTYPE "UTILITY", .isfloating = 1)
 	RULE(.wintype = WTYPE "TOOLBAR", .isfloating = 1)
 	RULE(.wintype = WTYPE "SPLASH", .isfloating = 1)
-	RULE(.class = "Firefox", .tags = 1 << 1)
+	RULE(.class = "firefox-esr", .tags = 1 << 1)
 	RULE(.class = "Slack", .tags = 1 << 5)
 	RULE(.class = "TelegramDesktop", .tags = 1 << 2)
 	RULE(.class = "Opera", .tags = 1 << 6)
