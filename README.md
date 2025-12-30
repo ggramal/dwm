@@ -52,3 +52,11 @@ chmod +x startx.sh
 
 exec ~/startx.sh
 ```
+
+## Lock screen
+
+to lock screen `i3lock` is used. `i3lock` can set background image on lock screen and in this setup a png image is chosen randomly from `~/Pictures/wallpapers/` folder. So
+
+1. Create `~/Pictures/wallpapers/` folder
+2. Download wallpapers to `~/Pictures/wallpapers/` folder corresponding your screen resolution and in png format
+3. use `super+l` keys to lock screen 

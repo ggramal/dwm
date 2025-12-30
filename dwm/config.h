@@ -254,7 +254,7 @@ static const Key keys[] = {
 	
   /* custom  */
     
-    { MODKEY,                       XK_l,                       spawn,          SHCMD("i3lock -i ~/Pictures/wallpapers/kangchenjunga_v2.png") },
+    { MODKEY,                       XK_l,                       spawn,          SHCMD("FILE_ARRAY=($(ls ~/Pictures/wallpapers/*.png)); RANDOM_FILE_INDEX=$(( RANDOM % ${#FILE_ARRAY[@]})); i3lock -i ${FILE_ARRAY[$RANDOM_FILE_INDEX]}") },
     { MODKEY|ShiftMask,             XK_x,                       spawn,          SHCMD("firefox") },
     { MODKEY|ShiftMask,             XK_o,                       spawn,          SHCMD("opera") },
     { MODKEY|ShiftMask,             XK_t,                       spawn,          SHCMD("telegram-desktop") },
