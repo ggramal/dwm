@@ -141,7 +141,7 @@ static const Rule rules[] = {
 	RULE(.wintype = WTYPE "UTILITY", .isfloating = 1)
 	RULE(.wintype = WTYPE "TOOLBAR", .isfloating = 1)
 	RULE(.wintype = WTYPE "SPLASH", .isfloating = 1)
-	RULE(.class = "firefox-esr", .tags = 1 << 1)
+	RULE(.class = "firefox", .tags = 1 << 1)
 	RULE(.class = "Slack", .tags = 1 << 5)
 	RULE(.class = "TelegramDesktop", .tags = 1 << 2)
 	RULE(.class = "Opera", .tags = 1 << 6)
@@ -255,7 +255,7 @@ static const Key keys[] = {
   /* custom  */
     
     { MODKEY,                       XK_l,                       spawn,          SHCMD("FILE_ARRAY=($(ls ~/Pictures/wallpapers/*.png)); RANDOM_FILE_INDEX=$(( RANDOM % ${#FILE_ARRAY[@]})); i3lock -i ${FILE_ARRAY[$RANDOM_FILE_INDEX]}") },
-    { MODKEY|ShiftMask,             XK_x,                       spawn,          SHCMD("firefox") },
+    { MODKEY|ShiftMask,             XK_x,                       spawn,          SHCMD("flatpak run org.mozilla.firefox") },
     { MODKEY|ShiftMask,             XK_o,                       spawn,          SHCMD("flatpak run com.opera.Opera") },
     { MODKEY|ShiftMask,             XK_t,                       spawn,          SHCMD("flatpak run org.telegram.desktop") },
     { MODKEY|ShiftMask,             XK_k,                       spawn,          SHCMD("flatpak run com.slack.Slack") },
